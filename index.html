@@ -2,37 +2,142 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#071a2b">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>場外人間 | 시스템 매매</title>
-<meta name="description" content="場外人間 — 시스템 매매">
+
 <style>
-:root{--navy:#071a2b;--gold:#d5aa63;--gold2:#b88943}
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:var(--navy);color:var(--gold)}
-body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Apple SD Gothic Neo",sans-serif}
-main{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:32px 24px}
-.card{width:min(100%,440px);text-align:center;transform:translateY(-2vh)}
-h1{font-family:"Songti SC","Noto Serif CJK KR","Batang",serif;font-size:clamp(42px,12vw,66px);font-weight:500;letter-spacing:.09em;margin:0 0 22px;color:var(--gold)}
-.line{height:1px;width:68%;margin:0 auto 18px;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
-.subtitle{font-size:15px;letter-spacing:.34em;margin-left:.34em;color:#d8b77d}
-a{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;height:58px;margin-top:76px;border:1px solid rgba(213,170,99,.75);border-radius:7px;color:var(--gold);text-decoration:none;font-size:15px;letter-spacing:.06em;transition:.2s ease}
-a:active{transform:scale(.99);background:rgba(213,170,99,.06)}
-.n{display:inline-grid;place-items:center;width:23px;height:23px;border:1px solid currentColor;border-radius:4px;font-family:Georgia,serif;font-weight:700;font-size:13px}
-footer{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));left:0;right:0;text-align:center;color:rgba(213,170,99,.42);font-size:10px;letter-spacing:.18em}
+:root {
+  --navy: #071a2b;
+  --gold: #d5aa63;
+  --gold2: #e1bb78;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--navy);
+}
+
+body {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-family: Arial, "Noto Sans CJK KR", "Malgun Gothic", sans-serif;
+}
+
+.card {
+  width: min(92vw, 520px);
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.brand {
+  margin: 0;
+  font-family: "Noto Sans CJK JP", "Noto Sans CJK KR",
+               "Yu Gothic", "Malgun Gothic", sans-serif;
+  font-size: clamp(52px, 13vw, 82px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: .035em;
+  color: var(--gold2);
+}
+
+.rule {
+  width: 72%;
+  height: 1px;
+  margin: 24px auto 17px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  opacity: .55;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .48em;
+  margin-left: .48em;
+}
+
+.blog {
+  margin-top: 58px;
+  width: 100%;
+  height: 58px;
+  border: 1px solid rgba(213,170,99,.8);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--gold2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: .08em;
+}
+
+.blog:hover {
+  background: rgba(213,170,99,.06);
+}
+
+.n {
+  width: 21px;
+  height: 21px;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 28px;
+  font-size: 10px;
+  letter-spacing: .22em;
+  opacity: .5;
+}
 </style>
 </head>
+
 <body>
-<main>
-<section class="card" aria-label="장외인간 모바일 명함">
-<h1>場外人間</h1>
-<div class="line"></div>
-<div class="subtitle">시스템 매매</div>
-<a href="https://blog.naver.com/trend-follower" target="_blank" rel="noopener">
-<span class="n">N</span><span>블로그 바로가기</span><span>→</span>
-</a>
-</section>
+
+<main class="card">
+
+  <h1 class="brand">場外人間</h1>
+
+  <div class="rule"></div>
+
+  <div class="subtitle">시스템 매매</div>
+
+  <a class="blog"
+     href="https://blog.naver.com/trend-follower"
+     target="_blank"
+     rel="noopener">
+
+    <span class="n">N</span>
+    <span>블로그 바로가기</span>
+    <span class="arrow">→</span>
+
+  </a>
+
+  <div class="footer">JANGOE.KR</div>
+
 </main>
-<footer>JANGOE.KR</footer>
+
 </body>
 </html>
